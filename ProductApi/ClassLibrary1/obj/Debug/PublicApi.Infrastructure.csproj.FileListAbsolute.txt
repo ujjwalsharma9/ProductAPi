@@ -1,0 +1,14 @@
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\ProductApi.core.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\ProductApi.core.pdb
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\obj\Debug\PublicApi.Infrastructure.csprojAssemblyReference.cache
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\obj\Debug\PublicApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\obj\Debug\PublicApi.Infrastructure.csproj.CopyComplete
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
