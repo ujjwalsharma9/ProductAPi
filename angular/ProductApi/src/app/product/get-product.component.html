@@ -1,0 +1,25 @@
+
+<div class="container" >
+    <div class="text-center">
+    <h1 class="text-center">Product Details</h1>
+    <br><br>
+
+    
+<img [src]='producttoshow.imgUrl' [style.height.px]='imgHeight' [style.width.px]='imgWidth'>
+    <p class="text-center"><strong>Product ID: </strong>{{producttoshow.ProductID}}</p>
+    <p class="text-center"><strong>Product Title: </strong>{{producttoshow.Title}}</p>
+    <p class="text-center"><strong>Product Details: </strong>{{producttoshow.Details}}</p>
+    <p class="text-center"><strong>Product Color: </strong>{{producttoshow.Color}}</p>
+    <p class="text-center"><strong>Product Price: </strong>{{producttoshow.Price}}</p>
+    <p class="text-center"><strong>Product Quantity: </strong>{{producttoshow.Quantity}}</p>
+    <p class="text-center"><strong>Product Rating: </strong>{{producttoshow.Rating}}</p>
+    <p class="text-center"><strong>Product InStock: </strong>                <i *ngIf='producttoshow.inStock' class='fa fa-check' aria-hidden="true"></i>
+        <i *ngIf='!producttoshow.inStock' class='fa fa-times' aria-hidden="true"></i></p>
+   
+    <br>
+    <br>
+<button (click)='goHome()' class="btn btn-danger">Back to Home  </button>
+ 
+</div>
+    
+    </div>

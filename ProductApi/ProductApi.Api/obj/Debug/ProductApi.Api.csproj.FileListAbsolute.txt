@@ -77,3 +77,6 @@ C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\Unity.Contain
 C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\Unity.Abstractions.pdb
 C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\Unity.Container.pdb
+C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\System.Web.Cors.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\System.Web.Http.Cors.dll
+C:\ujjwal_training\productAPIProject\ProductApi\ProductApi.Api\bin\System.Web.Http.Cors.xml

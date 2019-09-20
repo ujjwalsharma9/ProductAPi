@@ -1,0 +1,41 @@
+
+<div class="container">
+    <h2 >Product {{productidtoadd}} to add</h2>
+    
+    
+    <form  [formGroup]='addProductForm' novalidate class="form">
+
+        <input formControlName='productID' type="text" class="form-control" placeholder="Enter id" />
+      
+        <div class="alert alert-danger" *ngIf="addProductForm.get('productID').hasError('required') && addProductForm.get('productID').touched">
+          Id is Required
+        </div>
+    
+        <input formControlName='title' type="text" class="form-control" placeholder="Enter Name" />
+      
+        <div class="alert alert-danger" *ngIf="addProductForm.get('title').hasError('required') && addProductForm.get('title').touched">
+          Name is Required
+        </div>
+        <input formControlName='price' type="text" class="form-control" placeholder="Enter Price" />
+        <input formControlName='color' type="text" class="form-control" placeholder="Enter Color" />
+
+
+        <input formControlName='quantity' type="text" class="form-control" placeholder="Enter quantity" />
+        <input formControlName='rating' type="text" class="form-control" placeholder="Enter rating" />
+        <input formControlName='expiryDate' type="text" class="form-control" placeholder="Enter expiryDate" />
+        <input formControlName='imgurl' type="text" class="form-control" placeholder="Enter Image URL" />
+        <textarea formControlName='details' type="text" class="form-control" placeholder="Enter details" > </textarea>
+
+        <br>
+
+        <div class="checkbox">
+          <label><input formControlName='instock' type="checkbox"> In Stock</label>
+        </div>
+        
+        <br>
+    <br/>
+        <button (click)='addProduct()' [disabled]='addProductForm.invalid' class='btn btn-success'>Add Product</button>
+       
+      </form>
+    
+    </div>

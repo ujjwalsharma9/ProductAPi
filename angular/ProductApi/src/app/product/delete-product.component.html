@@ -1,0 +1,20 @@
+
+<div class="container" >
+    <div class="text-center">
+    <h1 class="text-center">Warning</h1>
+    <br><br>
+
+    <p class="text-center">Are you sure that you want to delete the following product:</p>
+    
+<img [src]='producttodelete.imgUrl' [style.height.px]='imgHeight' [style.width.px]='imgWidth'>
+    <p class="text-center">Product ID: {{producttodelete.ProductID}}</p>
+    <p class="text-center">Product Title: {{producttodelete.Title}}</p>
+    <p class="text-center">Product Details: {{producttodelete.Details}}</p>
+   
+    <br>
+    <br>
+<button (click)='deleteProduct()' class="btn btn-danger">Delete</button>
+ 
+</div>
+    
+    </div>

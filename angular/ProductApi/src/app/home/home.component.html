@@ -1,0 +1,101 @@
+<div class="container">
+    
+    <h1>{{title}}</h1>
+    
+
+    <div class="row">
+        <div class="col-md-2"> Filter By: </div>
+        <div class="col-md-6"><input [(ngModel)]='searchText' type="text" class="form-control" /> </div>
+      <br><br>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <th>
+              Id
+    
+            </th>
+            <th>
+                imgUrl
+                 </th> 
+            <th>
+              Name
+            </th>
+            <th>
+              Price
+            </th>
+            <th>
+              Color
+            </th>
+            <th>
+               Instock
+            </th>
+            <th>
+              Quantity
+            </th>
+
+            <th>
+             Details
+              </th>
+
+              <th>
+                 Rating
+                </th>
+                <th>
+                ExpiryDate
+                 </th>         
+
+            <th>
+                Options
+              </th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let p of products|productfilter:searchText">
+              <td>
+                {{p.ProductID}}
+              </td>
+              <td>
+                  <img [src]='p.imgUrl' [style.height.px]='imgHeight' [style.width.px]='imgWidth'>
+              </td>
+              <td>
+                <a href="/getproduct/{{p.ProductID}}">{{p.Title|uppercase}}</a>
+              </td>
+              <td>
+                {{p.Price}}
+              </td>
+              <td>
+                {{p.Color}}
+              </td>
+              <td>
+                <!-- <input type="checkbox" [checked]="p.Instock? 'checked':'' " disabled /> -->
+
+                <i *ngIf='p.inStock' class='fa fa-check' aria-hidden="true"></i>
+                <i *ngIf='!p.inStock' class='fa fa-times' aria-hidden="true"></i>
+
+                
+         
+              </td>
+              <td>
+                {{p.Quantity}}
+              </td>
+              <td>
+                    {{p.Details}}
+                </td>
+                <td>
+                        {{p.Rating}}
+                </td>
+                <td>
+                        {{p.ExpiryDate}}
+                </td>
+
+              <td>
+                <button (click)='editProduct(p.ProductID)' class='btn btn-info'><i class="fa fa-edit"></i></button>
+              </td>
+              <td>
+                <button (click)='deleteProduct(p.ProductID)' class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
